@@ -191,7 +191,7 @@ const Dashboard = () => {
           <img className='w-24 pt-5 pb-6 mx-auto' src={logo} alt='logo' />
         </div>
         <div className='pt-4 mt-4 space-y-2 font-medium border-t border-gray-300 w-5/6 mx-auto'></div>
-        <div className='h-[calc(100vh-14vh)] px-3 pb-5 bg-white flex flex-col justify-between'>
+        <div className='px-3 pb-5 bg-white flex flex-col h-[calc(100vh-14%)] justify-between'>
           <ul className='space-y-2 font-medium'>
             <li>
               <a
@@ -254,7 +254,7 @@ const Dashboard = () => {
               </a>
             </li>
           </ul>
-          <ul className='space-y-2 font-medium '>
+          <ul className='space-y-2 font-medium'>
             <li>
               <a
                 href='#'
@@ -303,7 +303,7 @@ const Dashboard = () => {
         </div>
       </aside>
 
-      <div className='p-10 pt-20 sm:ml-64 h-screen bg-[#f8f8f8]'>
+      <div className='p-5 pt-20 sm:p-10 sm:pt-20 sm:ml-64 h-screen bg-[#f8f8f8]'>
         <div className='text-4xl text-black my-4 mb-10'>My Projects</div>
         <div className='flex flex-col'>
           <div
@@ -339,8 +339,8 @@ const Dashboard = () => {
         style={{ display: form ? "block" : "none" }}
         className=' w-full bg-opacity-90 py-10 bg-white bg-blur-md absolute top-0 flex items-center justify-center z-50 min-h-screen'
       >
-        <div className='flex bg-white max-w-2xl sm:max-w-xl left-1/2 translate-x-[-50%] border-2 items-center justify-center p-6 py-10 rounded-xl relative z-50'>
-          <div className='mx-auto w-[900px] z-50'>
+        <div className='flex bg-white max-w-2xl sm:max-w-xl left-1/2 translate-x-[-50%] border-2 items-center justify-center p-2 mr-4 sm:p-6 py-10 rounded-xl relative z-50'>
+          <div className='mx-auto w-full sm:w-[900px] z-50'>
             <div
               className='absolute right-10 cursor-pointer'
               onClick={() => {
@@ -351,7 +351,7 @@ const Dashboard = () => {
             </div>
             <div className='text-2xl text-center mb-10'>New Projects</div>
             <form action='' method='POST'>
-              <div className='flex gap-10'>
+              <div className='flex gap-2 sm:gap-10'>
                 <div className='mb-5 flex-1'>
                   <label
                     htmlFor='Order'
@@ -602,7 +602,7 @@ const Card = ({ index, name, download_url, desc }) => {
         style={{ display: edit ? "block" : "none" }}
         className=' w-full bg-opacity-90 py-10 bg-white bg-blur-md absolute top-0 left-0 h-full flex items-center justify-center z-50 '
       >
-        <div className='flex bg-white max-w-2xl sm:max-w-xl left-1/2 translate-x-[-50%] border-2 items-center justify-center p-6 py-10 rounded-xl relative z-50'>
+        <div className='flex bg-white max-w-2xl sm:max-w-xl left-1/2 translate-x-[-50%] border-2 items-center justify-center p-2 mr-4 sm:p-6 py-10 rounded-xl relative z-50'>
           <div className='max-w-sm sm:w-[900px] z-50'>
             <div
               className='absolute right-10 cursor-pointer'
@@ -614,7 +614,7 @@ const Card = ({ index, name, download_url, desc }) => {
             </div>
             <div className='text-2xl text-center mb-10'>Edit Projects</div>
             <form action='' method='POST'>
-              <div className='flex gap-10'>
+              <div className='flex gap-2 sm:gap-10'>
                 <div className='mb-5 flex-1'>
                   <label
                     htmlFor='Order'
